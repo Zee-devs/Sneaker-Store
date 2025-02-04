@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1
+        style="
+          text-align: left;
+          color: off-white;
+          font-size: 50px;
+          font-style: italic;
+        "
+      >
+        RareKicks
+      </h1>
+      <h2>Unbox The Future Of Footwear</h2>
+    </header>
+    <div class="product-item">
+      <img src="Images/image1.jpg" alt="Luxury Sneakers Collection"/>
+      <h3>Limited Sneakers Collection</h3>
+    </div>
+
+    <nav>
+      <a onclick="showSection('store')">Home</a>
+      <a onclick="showSection('cart')"
+        >View Cart (<span id="cart-count">0</span>)</a
+      >
+    </nav>
+
+    <div id="store" class="content active">
+      <div class="product-list">
+        <div class="product-item">
+          <img src="Images/Nike1.jpg" alt="Air Force 1 Luxe" />
+          <h3>Air Force 1 Luxe</h3>
+          <p>$130.00</p>
+          <button onclick="addToCart('Air Force 1 Luxe', 130)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-item">
+          <img src="Images/Nike2.jpg" alt="Nike Blazer" />
+          <h3>Nike Blazer '77'</h3>
+          <p>$115.00</p>
+          <button onclick="addToCart('Nike Blazer \'77\'', 115)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-item">
+          <img src="Images/Nike3.jpg" alt="Air Jordan 1 RED" />
+          <h3>Air Jordan 1 'Legend Blue'</h3>
+          <p>$200.00</p>
+          <button onclick="addToCart('Air Jordan 1 \'Legend Blue\'', 200)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-item">
+          <img src="Images/Nike4.jpg" alt="Air Jordan 1 x Dior" />
+          <h3>Air Jordan 1 x Dior</h3>
+          <p>$10000.00</p>
+          <button onclick="addToCart('Air Jordan 1 x Dior', 3000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/Nike5.jpg" alt="Air Jordan 4 x Off-White 'Sail'" />
+          <h3>Air Jordan 4 x Off-White 'Sail'</h3>
+          <p>$3200.00</p>
+          <button
+            onclick="addToCart('Air Jordan 4 x Off-White \'Sail\'', 3000)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/Nike6.jpg" alt="Travis Scott x Air Jordan 1 'Mocha'" />
+          <h3>Travis Scott x Air Jordan 1 'Mocha'</h3>
+          <p>$3800.00</p>
+          <button
+            onclick="addToCart('Travis Scott x Air Jordan 1 \'Mocha\'', 3000)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/nike9.jpg" alt="Air Jordan 5 Retro 'Supreme'" />
+          <h3>Air Jordan 5 Retro 'Supreme'</h3>
+          <p>$2800.00</p>
+          <button onclick="addToCart('Air Jordan 5 Retro \'Supreme\'', 3000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/nike10.jpg" alt="Air Jordan 11 'Jubliee'" />
+          <h3>Air Jordan 11 'Jubliee'</h3>
+          <p>$3000.00</p>
+          <button onclick="addToCart('Air Jordan 11 \'Jubliee\'', 3000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/nike11.jpg" alt="Air Jordan 3 'A Ma Maniere'" />
+          <h3>Air Jordan 3 'A Ma Maniere'</h3>
+          <p>$900.00</p>
+          <button onclick="addToCart('Air Jordan 3 \'A Ma Maniere\'', 900)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/Nike7.jpg" alt="Travis Scott x Air Jordan 1 'Mocha'" />
+          <h3>Adidas Yeezy Boost 350 V2</h3>
+          <p>$400.00</p>
+          <button onclick="addToCart('Adidas Yeezy Boost 350 V2', 400)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/Nike8.jpg" alt="Adidas x Prada Superstar" />
+          <h3>Adidas x Prada Superstar</h3>
+          <p>$1200.00</p>
+          <button onclick="addToCart('Adidas x Prada Superstar', 1200)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/p1.jpg" alt="Puma x Ferrari Mirage Sport Luxe" />
+          <h3>Puma x Ferrari Mirage Sport Luxe</h3>
+          <p>$140.00</p>
+          <button onclick="addToCart('Puma x Ferrari Mirage Sport Luxe', 140)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/p2.jpg" alt="Puma x AMI Paris Suede" />
+          <h3>Puma x AMI Paris Suede</h3>
+          <p>$120.00</p>
+          <button onclick="addToCart('Puma x AMI Paris Suede', 120)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/p3.jpg" alt="Puma x Balmain Court" />
+          <h3>Puma x Balmain Court</h3>
+          <p>$1000.00</p>
+          <button onclick="addToCart('Puma x Balmain Court', 1000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/lv1.jpg" alt="LV Trainer Sneaker" />
+          <h3>LV Trainer Sneaker</h3>
+          <p>$3000.00</p>
+          <button onclick="addToCart('LV Trainer Sneaker', 3000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/lv2.jpg" alt="LV Skate Sneaker" />
+          <h3>LV Skate Sneaker</h3>
+          <p>$1600.00</p>
+          <button onclick="addToCart('LV Trainer Sneaker', 1600)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/lv3.jpg" alt="Louis Vitton x Air Force 1" />
+          <h3>Louis Vitton x Air Force 1</h3>
+          <p>$3000.00</p>
+          <button onclick="addToCart('Louis Vitton x Air Force 1', 3000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/lv4.jpg" alt="Louis Vitton Runner Tatic" />
+          <h3>Louis Vitton Runner Tatic</h3>
+          <p>$1400.00</p>
+          <button onclick="addToCart('Louis Vitton Runner Tatic', 1200)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/lv5.jpg" alt="Gucci Rhyton Sneakers" />
+          <h3>Gucci Rhyton Sneakers</h3>
+          <p>$1200.00</p>
+          <button onclick="addToCart('Gucci Rhyton Sneakers', 1100)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/lv6.jpg" alt="Louis Vitton Rivoli Sneakers Boot" />
+          <h3>Louis Vitton Rivoli Sneaker Boot</h3>
+          <p>$920.00</p>
+          <button onclick="addToCart('Louis Vitton Rivoli Sneaker Boot', 920)">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-item">
+          <img src="Images/g1.jpg" alt="Gucci Ace Embroided Snake Sneakers" />
+          <h3>Gucci Ace Embroided Snake Sneakers</h3>
+          <p>$1000.00</p>
+          <button
+            onclick="addToCart('Gucci Ace Embroided Snake Sneakers', 1000)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/g2.jpg" alt="Gucci Screener Sneakers" />
+          <h3>Gucci Screener Sneakers</h3>
+          <p>$950.00</p>
+          <button onclick="addToCart('Gucci Screener Sneakers', 950)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/g3.jpg" alt="Gucci Ultrapace Sneakers" />
+          <h3>Gucci Ultrapace Sneakers</h3>
+          <p>$900.00</p>
+          <button onclick="addToCart('Gucci Ultrapace Sneakers', 900)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="product-item">
+          <img src="Images/g4.jpg" alt="Gucci Tennis 1997" />
+          <h3>Gucci Tennis 1997</h3>
+          <p>$800.00</p>
+          <button onclick="addToCart('Gucci Tennis 1997', 800)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cart" class="content">
+      <div class="cart-items" id="cart-items"></div>
+      <h3 id="total-amount">Total: $0.00</h3>
+    </div>
+
+    <footer>&copy; 2025 RareKicks. All rights reserved.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
